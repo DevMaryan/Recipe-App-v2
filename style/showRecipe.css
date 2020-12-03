@@ -1,0 +1,54 @@
+/* The Modal (background) */
+.showModal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 30%;
+  top: 0;
+  width: 800px;/* Full width */
+  height: 820px; /* Full height */
+  font-family: 'Roboto';
+  overflow:auto;
+
+}
+
+/* Modal Content */
+.show-modal-content{
+  border-radius:3px;
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  border: 1px solid #386b26;
+  width: 80%;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+  -webkit-animation-name: animatetop2;
+  -webkit-animation-duration: 0.4s;
+  animation-name: animatetop2;
+  animation-duration: 0.4s;
+
+}
+
+/* Add Animation */
+@-webkit-keyframes animatetop2 {
+  from {top:-300px; opacity:0} 
+  to {top:0; opacity:1}
+}
+
+@keyframes animatetop2 {
+  from {top:-300px; opacity:0}
+  to {top:0; opacity:1}
+}
+
+
+.modal-body2 {padding: 2px 16px;}
+
+#ShowRecipeImage{
+  width:350px;
+  border-left:4px solid #71bd46;
+}
+
+.mg{
+  margin-left:20px;
+}

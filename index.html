@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Roboto:wght@300;400&family=Sansita+Swashed&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href = './style/style.css' rel='stylesheet'>
+    <link href = './style/modal.css' rel='stylesheet'>
+    <link href = './style/showRecipe.css' rel='stylesheet'>
+    <title>Recipe App</title>
+</head>
+<body>
+    <header id = 'header'>
+        <div class="logo">
+            <h1>Marianos</h1>
+        </div>
+        <div class="btnSide">
+            <button id = 'btnForm' name = 'btnForm' class = 'btn'>Add Recipe</button>
+        </div>
+    </header>
+    <div id = 'myModal' class = 'modal' >
+          <!-- Modal content -->
+        <div class = 'modal-content'>
+            <div id = 'frm' class = 'modal-body'>
+                <table id = 'table'>
+                    <tr>
+                        <td><label class = 'fntColor' for = 'recipeName'>Recipe Name</label></td>
+                        <td><input type = 'text' id = 'recipeName'></td>
+                    </tr>
+                    <tr>
+                        <td><label class = 'fntColor' for = 'recipeType'>Recipe Type</label></td>
+                        <td>                    <select id = 'recipeType'>
+                            <option>Breakfast</option>
+                            <option>Lunch</option>
+                            <option>Dinner</option>
+                            <option>Dessert</option>
+                        </select></td>
+                    </tr>
+                    <tr>
+                        <td><label class = 'fntColor' for = 'recipeDescription'>Recipe Description</label></td>
+                        <td><textarea class = 'form-control' id = 'recipeDescription' rows='6' cols = '30'></textarea></td>
+                    </tr>
+                    <tr>
+                        <td><label class = 'fntColor' for = 'recipeDirections'>Recipe Directions</label></td>
+                        <td><textarea class = 'form-control' id = 'recipeDirections' rows = '10'></textarea></td>
+                    </tr>
+                    <tr>
+                        <td><label class = 'fntColor' for = 'recipeImageUrl'>Recipe Image Url</label></td>
+                        <td><input type = 'text' class = 'form-control' id = 'recipeImageUrl'></td>
+                    </tr>
+                    <tr>
+                        <td><button id = 'btnCreate' class = 'btn'>Create</button></td>
+                        <td><button id = 'btnClose' class = 'btn'>Close</button></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+    <div id = 'content'>
+
+    </div>
+    <!-- View Recipe Box -->
+    <div id = 'ShowMyModal' class = 'showModal' >
+      <div class = 'show-modal-content'>
+          <div id = 'showFrm' class = 'modal-body2'>
+              
+          </div>
+      </div>
+  </div>
+
+    
+    <script src = './js/app.js'></script>
+    <script src = './js/AddRecipe.js'></script>
+    <script src = './js/ViewRecipe.js'></script>
+</body>
+</html>
